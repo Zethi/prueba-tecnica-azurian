@@ -423,3 +423,17 @@ VALUES
 	(343,'Timaukel',52),
 	(344,'Natales',53),
 	(345,'Torres del Paine',53);
+
+INSERT IGNORE INTO `addresses` (id, number, street_name, city_id)
+VALUES
+    (1, 1000, 'Example', 1),
+    (2, 1000, 'Example', 1),
+    (3, 1000, 'Example', 1),
+    (4, 1000, 'Example', 1);
+
+INSERT IGNORE INTO `persons` (`id`,`rut`, `civil_status`, `first_name`, `gender`, `last_name`, `address_id`)
+VALUES
+    (1,'12.345.678-9','UNMARRIED','John','MALE','Doe',1),
+    (2,'22.345.678-9','UNMARRIED','John','MALE','Doe',2),
+    (3,'32.345.678-9','UNMARRIED','John','MALE','Doe',3),
+    (4,'42.345.678-9','UNMARRIED','John','MALE','Doe',4);
