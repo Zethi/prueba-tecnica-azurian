@@ -12,3 +12,26 @@ services:
       - 3306:3306
     expose:
       - 3306
+  backend:
+    build:
+      context: ./backend
+      args:
+        JAR_FILE: "./target/prueba-tecnica-azurian-1.0.0.jar"
+    depends_on:
+      - database
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mariadb://database:3306/azurian-prueba-tecnica
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    env_file:
+      - .env
+    ports:
+      - 3000:3000
+    expose:
+      - 3000
