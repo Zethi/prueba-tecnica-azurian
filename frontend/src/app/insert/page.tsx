@@ -1,10 +1,10 @@
-import { City } from "@/interfaces/City";
-import { Province } from "@/interfaces/Province";
-import { Region } from "@/interfaces/Region";
-import { CreatePersonForm } from "@/sections/insert/CreatePersonForm";
-import { CityService } from "@/services/persons/CityService";
-import { ProvinceService } from "@/services/persons/ProvinceService";
-import { RegionService } from "@/services/persons/RegionService";
+import { City } from "../../interfaces/City";
+import { Province } from "../../interfaces/Province";
+import { Region } from "../../interfaces/Region";
+import { CreatePersonForm } from "../../sections/insert/CreatePersonForm";
+import { CityService } from "../../services/persons/CityService";
+import { ProvinceService } from "../../services/persons/ProvinceService";
+import { RegionService } from "../../services/persons/RegionService";
 
 export default async function Insert() {
     const regions: Region[] = await new RegionService().getAll();

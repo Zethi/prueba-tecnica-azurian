@@ -1,6 +1,6 @@
 "use client";
 
-import { Person } from "@/interfaces/Person";
+import { Person } from "../../interfaces/Person";
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TablePagination, TableRow } from "@mui/material";
 import { useState } from "react";
 

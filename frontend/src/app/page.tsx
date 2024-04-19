@@ -1,6 +1,6 @@
-import { Person } from "@/interfaces/Person";
-import { PersonsTable } from "@/sections/home/PersonsTable";
-import { PersonService } from "@/services/persons/PersonService";
+import { Person } from "../interfaces/Person";
+import { PersonsTable } from "../sections/home/PersonsTable";
+import { PersonService } from "../services/persons/PersonService";
 import { Button } from "@mui/material";
 import Link from "next/link";
 

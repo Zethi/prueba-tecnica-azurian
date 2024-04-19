@@ -1,9 +1,9 @@
 "use client";
 
-import { City } from "@/interfaces/City";
-import { Province } from "@/interfaces/Province";
-import { Region } from "@/interfaces/Region";
-import { PersonService } from "@/services/persons/PersonService";
+import { City } from "../../interfaces/City";
+import { Province } from "../../interfaces/Province";
+import { Region } from "../../interfaces/Region";
+import { PersonService } from "../../services/persons/PersonService";
 import { Button, FormGroup, MenuItem, Select, SelectChangeEvent, TextField } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, ChangeEventHandler, useState } from "react";
