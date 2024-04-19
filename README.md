@@ -12,3 +12,7 @@ los servicios se levantarán con los siguientes puertos:
 - `3306` Para la MariaDB
 - `3000` Para el Frontend
 - `8080` Para el Backend
+
+## Inicialización sin docker
+
+Dentro de cada proyecto hay un archivo README explicando como compilar y levantar cada una de las aplicaciones.
